@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Redddit</title>
+	<style>
+		table, td {
+			border: 1px solid black;
+		}
+	</style>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase.js"></script>
+        <script src="login.js"></script>
+    </head>
+    <body>
+	<div class="all-posts">
+        	<button id="signin" onclick = "googleSignin()">Sign In</button>
+        	<button id="signout" style="display:none" onclick = "googleSignout()">Sign Out</button>
+		<button id="createsub" style="display:none" onclick ="createpost()">Create Subredddit</button>
+		<h1 id="welcome">Welcome to Redddit</h1>
+		<p id="check1"></p>
+		<p name="check2" id="check2"></p>
+		<p id="check3"></p>
+		<table id="posts"></table>
+	</div>
+	<div class="single-post">
+		<h1 id="title"></h1>
+		<img id="image"></img>
+		<p id="text"></p>
+		
+	</div>	
+	</div>
+    </body>
+</html>
